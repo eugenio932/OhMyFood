@@ -142,10 +142,6 @@ body {
     transition: opacity 0.25s;
   }
 }
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .fonctionnement-title {
   margin-top: 40px;
@@ -219,6 +215,7 @@ main {
       margin-bottom: 20px;
       border-radius: 15px;
       width: 90%;
+      max-width: 1200px;
     }
     & a {
       text-decoration: none;
@@ -304,6 +301,11 @@ main {
   color: black;
 }
 
+// .main {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+
 .img-menu {
   width: 100%;
   height: 300px;
@@ -320,6 +322,8 @@ main {
   border-radius: 40px 40px 0 0;
   padding-top: 50px;
   padding-bottom: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -528,14 +532,5 @@ main {
       height: 59px;
       align-items: center;
     }
-  }
-  .restaurants {
-    height: auto;
-  }
-  .restaurants__segment {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
   }
 }
