@@ -214,6 +214,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
+  width: 100%;
 }
 .restaurants__segment--box {
   display: flex;
@@ -456,6 +457,9 @@ body {
   gap: 4px;
   box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.336);
   transition: border-radius 1.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .menu__card--box h4 {
   overflow: hidden;
@@ -526,7 +530,11 @@ body {
   color: white;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 774px) {
+  .fonctionnement-title {
+    display: flex;
+    justify-content: center;
+  }
   .fonctionnement {
     flex-direction: row;
     justify-content: space-evenly;
@@ -535,5 +543,20 @@ body {
     width: 27%;
     height: 59px;
     align-items: center;
+  }
+  .restaurants {
+    height: auto;
+    align-items: center;
+  }
+  .restaurants__segment {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 60px;
+  }
+  .restaurants__segment--box {
+    width: 45%;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */

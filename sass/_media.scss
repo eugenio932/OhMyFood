@@ -209,6 +209,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+    width: 100%;
 
     &--box {
       display: flex;
@@ -450,6 +451,9 @@ body {
       gap: 4px;
       box-shadow: $box-shadow;
       transition: border-radius 1.5s;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       h4 {
         overflow: hidden;
         white-space: nowrap;
@@ -523,7 +527,11 @@ body {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 774px) {
+  .fonctionnement-title {
+    display: flex;
+    justify-content: center;
+  }
   .fonctionnement {
     flex-direction: row;
     justify-content: space-evenly;
@@ -531,6 +539,22 @@ body {
       width: 27%;
       height: 59px;
       align-items: center;
+    }
+  }
+  .restaurants {
+    height: auto;
+    align-items: center;
+    &__segment {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 60px;
+
+      &--box {
+        width: 45%;
+        margin: 0;
+      }
     }
   }
 }
